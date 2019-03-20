@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">sticker</string>
+    <string name="sticker_zag_empty_recent">no recent sticker</string>
+</resources>

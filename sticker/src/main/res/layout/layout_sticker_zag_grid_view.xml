@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="12dp"
+            android:numColumns="@integer/sticker_zag_grid_columns"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbars="vertical" />
+
+    <TextView
+            android:id="@+id/tv_empty_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_icon_small"
+            android:gravity="center"
+            android:text="@string/sticker_zag_empty_recent"
+            android:textColor="#ccc"
+            android:visibility="gone" />
+
+</RelativeLayout>
+

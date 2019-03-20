@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#fff"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_tab_sticker_zag"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/iv_keyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/default_margin_padding_small"
+                    android:layout_marginTop="@dimen/default_margin_padding_small"
+                    android:background="@drawable/bg_tab_sticker_zag_keyboard">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxHeight="@dimen/default_icon_medium"
+                        android:minWidth="50dp"
+                        app:srcCompat="@drawable/ic_keyboard" tools:ignore="VectorDrawableCompat"/>
+
+            </LinearLayout>
+
+            <com.example.sticker.StickerZagTabLayout
+                    android:id="@+id/tab_sticker_zag"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="60dp"
+                    app:tabMode="scrollable"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
