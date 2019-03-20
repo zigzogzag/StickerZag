@@ -15,9 +15,9 @@ class PreviewSticker(
     private val rootView: ViewGroup
 ) : PopupWindow(context) {
 
-    fun setPreview(group: String, toy: StickerZagItemData) {
+    fun setPreview(group: String, item: StickerZagItemData) {
         LayoutInflater.from(context).inflate(R.layout.layout_preview_sticker, rootView, false).apply {
-            val imagePath = "file:///android_asset/$group/${toy.image}.${toy.imageExtension}"
+            val imagePath = "file:///android_asset/$group/${item.image}.${item.imageExtension}"
 //            Timber.d("setPreview() called with: group = [$group], pathImg = [$imagePath]")
             Glide.with(context)
                 .load(Uri.parse(imagePath))

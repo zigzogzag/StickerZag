@@ -21,17 +21,6 @@ class StickerZagTabLayout @JvmOverloads constructor(
     ) {
         var matrix = ColorMatrix()
         if (adapter != null) {
-            /*for (position in 0 until adapter.count) {
-                getTabAt(position)?.let {
-                    it.customView = LayoutInflater.from(context)
-                        .inflate(R.layout.tab_layout_sticker_zag, this, false).apply {
-//                            val imageResId = ResUtils.getDrawableResourceFilename(
-//                                context, String.format("ic_tab_%s", iconTab[position])
-//                            )
-//                            findViewById<ImageView>(R.id.iv_tab_icon).setImageResource(imageResId)
-                        }
-                }
-            }*/
 
             for (position in 0 until adapter.count) {
                 getTabAt(position)?.let {
